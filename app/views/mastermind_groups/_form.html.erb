@@ -1,0 +1,22 @@
+<%= form_for(@mastermind_group) do |f| %>
+  <% if @mastermind_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mastermind_group.errors.count, "error") %> prohibited this mastermind_group from being saved:</h2>
+
+      <ul>
+      <% @mastermind_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :topic, "Topic" %><br>
+    <%= f.text_field :topic, class:"form-control", autofocus: true, style:'width: 300px;' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

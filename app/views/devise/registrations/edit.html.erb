@@ -1,0 +1,96 @@
+<div class="image-container">
+<div class="row" style="font-size: 14px; font-family: 'Open Sans', sans-serif; margin-top: -80px;">
+
+
+  <div class="col-md-8 col-md-offset-2" style="font-family: 'Open Sans', sans-serif;">
+    <div class="row" style="margin-bottom: 30px;">
+          </br>
+          </br>
+            <% flash.each do |key, value| %>
+             <div class="alert alert-info" role="alert"><%= value %></div>
+            <% end %>
+          </br>
+          </br>
+          
+      <div class="col-md-12" style="background-color: #242424;">
+          </br>
+          <div>
+            <span style="font-size: 20px;">Edit Profile</span>
+          </div>
+          <hr>
+
+          <%= form_for @user do |f| %>
+
+            </br>
+            </br>
+          <div class="col-md-6" style="">
+            <div class="form-group">
+              <%= f.label :first_name %><br />
+              <%= f.text_field :first_name, class:"form-control", autofocus: true %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :last_name %><br />
+              <%= f.text_field :last_name, class:"form-control", autofocus: true %>
+            </div>
+
+
+            <div class="form-group">
+              <%= f.label :occupation %><br />
+              <%= f.text_field :occupation, class:"form-control", autofocus: true %>
+            </div>
+
+             <div class="form-group">
+              <%= f.label :employer %><br />
+              <%= f.email_field :employer, class:"form-control", autofocus: true %>
+            </div>
+
+          </div>
+
+          <div class="col-md-6" style="">
+
+             <div class="form-group">
+              <%= f.label :linkedin %><br />
+              <%= f.email_field :linkedin, class:"form-control", autofocus: true %>
+            </div>
+
+             <div class="form-group">
+              <%= f.label :twitter %><br />
+              <%= f.email_field :twitter, class:"form-control", autofocus: true %>
+            </div>
+          
+            <div class="form-group">
+              <%= f.label :short_bio %><br />
+              <%= f.text_area :short_bio, class:"form-control", rows: '5', autofocus: true %>
+            </div>
+
+            <div class="actions pull-right">
+              <%= f.submit "Update", class:"btn btn-lg", style:"background-color: #093954; color: white; border-radius:0px; margin-left:1px;" %>
+            </div>
+            </br>
+  </br>
+  </br>
+  </br>
+
+          </div>
+          <% end %>
+        </br>
+        
+      </div>
+
+    </div>
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+  </div>
+</div>
+</div>
+
+
+
+
+

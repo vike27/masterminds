@@ -1,0 +1,82 @@
+<div class="image-container2">
+ <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 350px; margin: auto; margin-top: -80px;"><%= value %></div>
+  <% end %>
+<div style="text-align: center;">
+  <h1><%= @mastermind_group.topic %> Mastermind Group</h1>
+</br>
+<p style="font-size: 16px;">October 15th, 2016</p>
+</br>
+</br>
+  <div class="container">
+   <div class="row">
+
+    <div class="col-md-12">
+      <p>6 people interseted in this Mastermind session</p>
+    </br>
+      <%= image_tag("circle8.png") %>
+      <%= image_tag("circle9.png") %>
+      <%= image_tag("circle10.png") %>
+      <%= image_tag("circle5.png") %>
+      <%= image_tag("circle11.png") %>
+      <%= image_tag("circle3.png") %>
+      </br>
+      </br>
+      </br>
+      </br>
+        <div style='text-align:center;'>
+    <div class="col-sm-4 col-sm-offset-4" style="text-align:center;">
+      <%= link_to "Request to Join", {:controller => "mastermind_groups", :action => "join"}, class:"btn btn-lg btn-default", style:"border-radius:0px; background-color: #eee; font-size: 22px; color: #093954; padding: 10px 50px 10px 50px;" %>
+      </br>
+    </div>
+  </br>
+  </div>
+
+    </div>
+
+    
+
+   </div>
+ </div>
+ </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
+
+<br>
+
+</div>
+
+<!-- <div class="col-md-8 col-md-offset-2">
+  </br>
+</br>
+</br>
+</br>
+<h2>Mastermind Session Participants</h2>
+ </br>
+</br>
+</br>
+</br>
+    <div style="margin-top: 25px; margin-bottom:25px;">
+        <%= image_tag("circle8.png") %></br>
+    </div>
+    <div style="margin-top: 25px; margin-bottom:25px;">
+        <%= image_tag("circle8.png") %></br>
+    </div>
+    <div style="margin-top: 25px; margin-bottom:25px;">
+        <%= image_tag("circle8.png") %></br>
+    </div>
+    <div style="margin-top: 25px; margin-bottom:25px;">
+        <%= image_tag("circle8.png") %></br>
+    </div>
+    <div style="margin-top: 25px; margin-bottom:25px;">
+        <%= image_tag("circle8.png") %></br>
+    </div>
+    <div style="margin-top: 25px; margin-bottom:25px;"  > 
+        <%= image_tag("circle8.png") %></br>
+    </div>
+      
+</div> -->

@@ -1,0 +1,54 @@
+<div class="image-container2">
+
+<div style="text-align: center;">
+  <h1><%= @mastermind_group.topic %> Mastermind Group</h1>
+</br>
+<p style="font-size: 16px;">October 15th, 2016</p>
+</br>
+</br>
+  <div class="container">
+   <div class="row">
+
+    <div class="col-md-12">
+      <p>6 people interseted in this Mastermind session</p>
+    </br>
+      <%= image_tag("circle8.png") %>
+      <%= image_tag("circle9.png") %>
+      <%= image_tag("circle10.png") %>
+      <%= image_tag("circle5.png") %>
+      <%= image_tag("circle11.png") %>
+      <%= image_tag("circle3.png") %>
+      </br>
+      </br>
+      </br>
+      </br>
+        <div style='text-align:center;'>
+    <div class="col-sm-4 col-sm-offset-4" style="text-align:center;">
+      <% if current_user.linkedin? %>
+       <%= link_to "I\'m interested", edit_user_path, class:"btn btn-lg btn-default", style:"border-radius:0px; background-color: #eee; font-size: 22px; color: #093954; padding: 10px 50px 10px 50px;"  %>
+      <% end %>
+      <% if current_user.linkedin? %>
+       <%= link_to "I\'m interested", edit_user_path, class:"btn btn-lg btn-default", style:"border-radius:0px; background-color: #eee; font-size: 22px; color: #093954; padding: 10px 50px 10px 50px;"  %>
+      <% end %>
+      </br><p style="font-size: 12px;">click here to learn more</p>
+    </div>
+  </br>
+  </div>
+
+    </div>
+
+    
+
+   </div>
+ </div>
+ </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
+
+<br>
+
+</div>

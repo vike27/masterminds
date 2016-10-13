@@ -1,0 +1,1 @@
+json.array! @mastermind_groups, partial: 'mastermind_groups/mastermind_group', as: :mastermind_group

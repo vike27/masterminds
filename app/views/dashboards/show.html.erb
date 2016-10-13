@@ -1,0 +1,108 @@
+<div class="image-container">
+   <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 350px; margin: auto; margin-top: -80px;"><%= value %></div>
+  <% end %>
+<div class="row" style="font-size: 14px; font-family: 'Open Sans', sans-serif; margin-top: -80px;">
+
+  <div class="col-md-8 col-md-offset-2" style="font-family: 'Open Sans', sans-serif;">
+    <div class="row" style="margin-bottom: 30px;">
+    </br>
+      <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert"><%= value %></div>
+      <% end %>
+    </br>
+    </br>
+      <div class="col-md-5" style="background-color: #242424; text-align: left;">
+        </br>
+        </br>
+        <%= link_to 'Edit Profile', edit_user_registration_path, class:"pull-right btn btn-sm", style:"color:white; border: 0px; background-color: #093954; border-radius: 0px;" %>
+          
+        *Add picture field here*
+        </br>
+        </br>
+        
+        <hr>
+        <div>
+          <span style="font-size: 15px;">First Name: <%= current_user.first_name %></span></br></br>
+          <span style="font-size: 15px;">Last Name: <%= current_user.last_name %></span></br>
+        </div>
+        
+        
+        </br>
+
+
+
+        <div>
+          <span>Biography: <%= current_user.short_bio %>
+        </div>
+        </br>
+        </br>
+
+
+        
+      </div>
+
+      <div class="col-md-5 col-md-offset-1"  style="background-color: #242424; text-align:left;">
+                </br>
+        </br>
+         <%= link_to 'Edit Profile', edit_user_registration_path, class:"pull-right btn btn-sm", style:"color:white; border: 0px; background-color: #093954; border-radius: 0px;" %>
+          
+        <div style="font-size:20px;">Details</div>
+        
+        <hr>
+
+
+        <div>
+          <span>Title: <%= current_user.occupation %></span>
+        </div>
+        </br>
+
+        <div>
+          <span>Employer: <%= current_user.employer %>
+        </div>
+        </br>
+
+        <div>
+          <span>Twitter <%= current_user.twitter %>
+        </div>
+        </br>
+
+        <div>
+          <span>Linkedin: <%= current_user.linkedin %>
+        </div>
+        </br>
+        </br>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-5" style="background-color: #242424;">
+        </br>
+        <div style="font-size:20px;">Sessions Pending Approval</div>
+        <hr>
+        <div></div>
+        </br>
+      </div>
+
+      <div class="col-md-5 col-md-offset-1"  style="background-color: #242424;">
+        <br>
+        <div style="font-size: 20px;">Sessions Approved</div>
+        <hr>
+        
+        </br>
+      </div>
+
+    </div>
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+  </div>
+</div>
+</div>

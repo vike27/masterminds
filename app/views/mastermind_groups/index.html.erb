@@ -1,0 +1,51 @@
+<div class="image-container2">
+ <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 350px; margin: auto; margin-top: -80px;"><%= value %></div>
+  <% end %>
+<div style="text-align: center;">
+  <h1>Upcoming Mastermind Groups</h1>
+</br>
+</br>
+</br>
+  <div class="container">
+   <div class="row">
+
+    <div class="col-md-6">
+    <%= link_to mastermind_group_path(1) do %>
+      <h3>Growth Hacking Mastermind Session</h3>
+      <p style="font-size: 16px;">October 15th, 2016</p>
+    </br>
+      <%= image_tag("circle8.png") %><%= image_tag("circle9.png") %><%= image_tag("circle10.png") %>
+      </br>
+      </br>
+      <p style="font-size: 16px;">+ 6 others interested</p>
+    <% end %>
+    </div>
+
+    <div class="col-md-6">
+    <%= link_to mastermind_group_path(2) do %>
+      <h3>Startup Ideation Mastermind Session</h3>
+      <p style="font-size: 16px;">October 29th, 2016</p>
+    </br> 
+      <%= image_tag("circle5.png") %><%= image_tag("circle11.png") %><%= image_tag("circle3.png") %>
+      </br>
+      </br>
+      <p style="font-size: 16px;">+ 2 others interested</p>
+    <% end %>
+    </div>
+    
+
+   </div>
+ </div>
+ </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
+
+<br>
+
+<%#= link_to 'New Mastermind group', new_mastermind_group_path %>
+</div>

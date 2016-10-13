@@ -1,0 +1,1 @@
+json.partial! "mastermind_groups/mastermind_group", mastermind_group: @mastermind_group
